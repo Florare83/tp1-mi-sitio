@@ -101,6 +101,6 @@ input:focus {
 
 input, textarea, select {
   width: 100%;
-  padding: 8px;
-  border-radius: 5px;
+  padding: 10px;
+  border-radius: 8px;
 }
