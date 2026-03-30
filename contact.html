@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Areco — Mi Primer Sitio</title>
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+   <header>
+    <h1>ARECO LIDIA FLORENCIA</h1>
+    <p class="destacado">Estudiante de Programación</p>
+    </header>
+ <nav>
+  <a href="index.html">Principal</a>
+ </nav>
+ <main>
+  
+<section id="formulario">
+ <h2>Contacto</h2>
+ <form action="#" method="POST">
+  <label for="nombre">Nombre *</label> 
+  <br>
+  <input type="text" id="nombre" name="nombre" required minlength="3">
+  <br>
+  <label for="email">Email *</label> 
+  <br>
+  <input type="email" id="email" name="email" required>
+  <br>
+  <label for="tel">Teléfono *</label> 
+  <br>
+  <input type="tel" id="tel" name="telefono" pattern="[0-9]{10}" required>
+  <br>
+  <label for="rol">Rol  *</label> 
+  <br>
+  <select id="rol" name="Rol">
+    <option value="profesora">Profesora</option>
+    <option value="tecnica">Tecnica</option>
+    <option value="analista">Analista</option>
+  </select>
+  <br>
+  <label for="motivo">Motivo *</label> 
+  <br>
+  <textarea id="motivo" name="motivo" required minlength="10"></textarea>
+  <br>
+  <label for="terminos">Acepta los términos sobre los datos proporcionados*</label> 
+  <br>
+  <input type="checkbox" id="terminos" name="terminos" required>
+  <br>
+  <button type="submit">Enviar mensaje</button>
+  </form>
+  </section>
+</main>
+
+ <footer>
+  <p>&copy; 2026 - Areco Lidia Florencia</p>
+ </footer>
+</html>
