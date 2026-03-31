@@ -4,9 +4,9 @@ Ambas son metodologías ágiles pero se diferencian en la forma en la que organi
 
 Scrum determina roles dentro del equipo y divide el proyecto en 4 eventos con una duración y tarea específicas, incluyendo entregas periódicas y feedback constante.
 
-Kanban organiza las tareas en un tablero con columnas: Backlog, Por hacer, En curso, En revisión, Terminado, permitiendo reflejar el avance en las tareas. El flujo de las tareas es continuo, no hay sprints ni roles.
+Kanban organiza las tareas en un tablero con columnas: No iniciadas, Por hacer, En curso, En revisión, Terminado, permitiendo reflejar el avance en las tareas. El flujo de las tareas es continuo, no hay sprints ni roles.
 
-Para un proyecto individual, Kanban podría ser de mayor utilidad ya que no requiere de roles específicos, permite determinar prioridades así como avanzar y registrar dichos avances en base al ritmo y neccesidades de cada uno
+Para un proyecto individual, Kanban podría ser de mayor utilidad ya que no requiere de roles específicos, permite determinar prioridades así como avanzar y registrar dichos avances en base al ritmo y neccesidades de cada uno.
 
 b) ¿Qué es un MVP (Producto Mínimo Viable) y cómo lo aplicarías si te piden hacer un sitio web para un negocio local?
 
@@ -17,6 +17,6 @@ Es decir, las funciones avanzadas como formulario, catálogo, sistema de compras
 
 c) ¿Cómo te ayudó el tablero Kanban a organizar las tareas de este TP? Mencioná un ejemplo concreto.
 
-Me permite priorizar, organizar y dividir las tareas para visualizar aquellas que están pendientes, en proceso y las terminadas. Esto permite llevar un seguimiento y evitar omitir alguna tarea.
-Un ejemplo sería dividir las tareas del trabajo práctico, 1)formulario de contacto, 2)estilos css, etc.
+Me permitió priorizar, organizar y dividir las tareas para visualizar aquellas que estaban pendientes, en proceso y las terminadas. Esto me facilitó llevar un seguimiento y evitar omitir alguna tarea.
+Un ejemplo sería dividir las tareas del trabajo práctico, por puntos/consignas 1) formulario de contacto, 2)estilos css, etc.
 
