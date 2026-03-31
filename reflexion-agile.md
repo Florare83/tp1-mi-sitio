@@ -17,5 +17,6 @@ Es decir, las funciones avanzadas como formulario, catálogo, sistema de compras
 
 c) ¿Cómo te ayudó el tablero Kanban a organizar las tareas de este TP? Mencioná un ejemplo concreto.
 
-Me permite priorizar, organizar y dividir las tareas para visualizar aquellas que están pendientes, en proceso y las terminadas para llevar un seguimiento y evitar omitir alguna.
-Ejemplo: Dividir las tareas del trabajo práctico, 1)formulario de contacto, 2)estilos css, etc.
+Me permite priorizar, organizar y dividir las tareas para visualizar aquellas que están pendientes, en proceso y las terminadas. Esto permite llevar un seguimiento y evitar omitir alguna tarea.
+Un ejemplo sería dividir las tareas del trabajo práctico, 1)formulario de contacto, 2)estilos css, etc.
+
