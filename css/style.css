@@ -291,7 +291,6 @@ input, textarea, select {
 
 /* ==== MEDIA QUERIES ==== */
 /* ═══ BASE: MÓVIL (< 768px) ═══ */
- @media (max-width: 767px) {
  .container { padding: 1rem; }
  .sidebar { display: none; }       /* oculto en móvil */
  .cards { display: grid; grid-template-columns: 1fr; gap: 1rem; }
@@ -301,11 +300,11 @@ input, textarea, select {
     grid-template-rows: auto;
     grid-template-areas:
       "header"
+      "sidebar"
       "main"
       "footer";
     min-height: auto;
   }
- }
 
 /* ═══ TABLET (768px+) ═══ */
 @media (min-width: 768px) {
@@ -314,7 +313,7 @@ input, textarea, select {
  .cards { grid-template-columns: repeat(2, 1fr); }  /* 2 columnas */
 
   .grid {
-    grid-template-columns: 300px 1fr; 
+    grid-template-columns: 220px 1fr; 
     grid-template-areas:
       "header header"
       "sidebar main"
