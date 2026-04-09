@@ -1,41 +1,143 @@
 <!DOCTYPE html>
 <html lang="es">
- <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Areco — Mi Primer Sitio</title>
-  <link rel="stylesheet" href="style.css">
- </head>
- <body>
-   <header>
-   <h1>ARECO LIDIA FLORENCIA</h1>
-   <p class="destacado">Estudiante de Programación</p>
-  </header>
- <nav>
-  <a href="#datos">Datos personales</a>
-  <a href="#educacion">Educación</a>
-  <a href="contact.html">Contacto</a>
- </nav>
- <main>
-  <section id="datos">
-   <h2>Datos personales</h2>
-   <img src="images/foto_perfil.jpg" alt="Foto de Florencia">
-   <p>Estudiante del 2do año de la Tecnicatura en Análisis y Desarrollo de Software en el IES 6001</p>
-   <a href="https://ies6001-sal.infd.edu.ar/sitio/">IES 6001</a>
-   <img src="images/ies6001.png" alt="Instituto de Educación Superior 6001">
-  </section>
-   <section id="educacion">
-   <h2>Educación</h2>
-   <ul>
-    <li>Profesorado en Informática</li>
-    <li>Tecnicatura en Soporte y Mantenimiento de software</li>
-    <li>Tecnicatura en Análisis y Desarrollo de Software</li>
-   </ul> 
-  </section>
-  
- </main>
 
- <footer>
-  <p>&copy; 2026 - Areco Lidia Florencia</p>
- </footer>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primer Sitio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM Serif Display&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="navbar">
+         
+      <h1 class="logo">ARECO FLORENCIA</h1>
+      
+      <nav>
+       <ul class="nav-links">
+        <li>
+          <a href="#educacion">Educación</a>
+        </li>
+        <li>
+          <a href="#servicios">Servicios</a>
+        </li>
+        <li>
+          <a href="contact.html">Contacto</a>
+        </li>
+        </ul>
+      </nav> 
+    </header>
+
+  <main class="container">
+    <section id="sobremi" class="grid">
+      <header class="header"><h2>Sobre mí</h2></header>
+      <aside class="sidebar">
+        <p>
+          Actualmente curso el 2° año de la Tecnicatura en Análisis y Desarrollo de Software en el Instituto de Educación Superior N°6001.<br>
+          Estoy interesada en el desarrollo web de sitios accesibles, modernos y funcionales.
+        </p>
+      </aside>
+      <div class="main"><img src="images/foto_perfil.png" alt="Foto de Florencia"> </div>
+      <footer class="footer"><p>Salta - Argentina</p></footer>
+    </section>
+
+    <section id="educacion">
+    <h2>Educación</h2>
+      <ul>
+        <li>Profesorado en Informática</li>
+        <li>Tecnicatura Superior en Soporte y Mantenimiento de software</li>
+        <li>Tecnicatura Superior en Análisis y Desarrollo de Software</li>
+      </ul> 
+    </section>
+
+    <section  id="servicios">
+      <h2>Servicios</h2>
+      <div class="cards">
+          <article class="card">
+            <h3>Capacitación</h3>
+            <ul>
+              <li>A empleados</li>
+              <li>A clientes</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Servicio Técnico</h3>
+            <ul>
+              <li>Hardware</li>
+              <li>Software</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Análisis y Desarrollo</h3>
+            <ul>
+              <li>Páginas web</li>
+              <li>Software a medida</li>
+            </ul>
+          </article>
+      </div>
+    </section> 
+
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <div class="galeria">
+      <div class="card">
+        <h3>Diseño web</h3>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Git</li>
+          <li>GitHub</li>
+        </ul>
+      <div class="icono">🎨</div>
+      </div>
+
+      <div class="card">
+        <h3>Desarrollo de software</h3>
+        <ul>
+          <li>Python</li>
+          <li>Base de datos</li>
+        </ul>
+        <div class="icono">💻</div>
+      </div>
+
+      <div class="card">
+        <h3>Robótica</h3>
+        <ul>
+          <li>Arduino</li>
+          <li>Raspberry Pi</li>
+        </ul>
+        <div class="icono">🤖</div>
+      </div>
+
+      <div class="card">
+        <h3>Complementarias</h3>
+        <ul>
+          <li>Trabajo en equipo</li>
+          <li>Resolución de problemas</li>
+          <li>Pensamiento lógico</li>
+          <li>Aprendizaje autónomo</li>
+        </ul>
+        <div class="icono">🧠</div>
+      </div>
+      </div>
+    </section>
+
+    <section class="hero">
+        <h1>Areco Lidia Florencia</h1>
+        <p>Desarrollador Web Junior</p>
+        <a href="#servicios" class="boton">Ver servicios</a>
+    </section>
+   </main>
+
+   <footer>
+    <p>&copy; 2026 - Derechos reservados</p>
+    <p>Contacto: 
+    <a href="https://www.facebook.com/florare83" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com/florare83" target="_blank">Instagram</a>
+    <a href="https://www.linkedin.com/in/florare83" target="_blank">LinkedIn</a>
+    <a href="mailto:florare83@gmail.com" target="_blank">Gmail</a>
+    </p>
+   </footer>
 </html>

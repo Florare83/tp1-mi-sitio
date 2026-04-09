@@ -1,0 +1,335 @@
+/* ===== VARIABLES Y PALETA DE COLORES ===== */
+:root {
+ --color-primary: #facc15;  
+ --color-secondary: #1f2937;   
+ --color-accent: #eab308;     
+ --color-text: #111827;        
+ --color-bg: #111827;        
+ --color-white: #ffffff;
+
+ --radius: 20px;
+ --shadow: 0 4px 20px rgba(0,0,0,0.3);
+
+ --font-main: "Inter", sans-serif;
+ --font-heading: "DM Serif Display", serif;
+}
+
+/* ==== RESET BASICO ==== */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: var(--font-main);
+  color: var(--color-white);
+  font-size: 1rem;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+  background-color: var(--color-bg);
+}
+
+/* ===== TITULOS ===== */
+h1 {
+ font-family: var(--font-heading);
+ font-size: 2.5rem;
+ font-weight: 700;
+ color: var(--color-white);
+}
+
+h2 {
+ font-family: var(--font-heading);
+ font-size: 1.8rem;
+ font-weight: 600;
+ color: var(--color-secondary);
+}
+
+h3 {
+ font-family: var(--font-heading);
+ font-size: 1.3rem;
+ font-weight: 600;
+ color: var(--color-secondary);
+}
+
+/* ===== HEADER ===== */
+header {
+ font-family: var(--font-heading);
+ background-color: var(--color-secondary);
+ color: var(--color-white);
+ text-align: center;
+ padding: 2rem;
+ border-bottom: 3px solid var(--color-primary);
+}
+
+/* ===== FOOTER ===== */
+footer {
+ color: var(--color-white);
+ background-color: var(--color-secondary);
+}
+
+footer a {
+ color: var(--color-primary);
+ text-decoration: none;
+ margin: 0 1rem;
+ font-weight: bold;
+}
+
+footer a:hover {
+ color: var(--color-accent);
+}
+
+/* ===== MAIN ===== */
+main {
+ max-width: 900px;
+ margin: 0 auto;
+ padding: 2rem;
+}
+
+/* ===== SECCIONES ===== */
+section {
+ background-color: var(--color-white);
+ color: var(--color-text);
+ border-radius: var(--radius);
+ padding: 2rem;
+ margin-bottom: 2rem;
+ box-shadow: var(--shadow);
+ border-left: 5px solid var(--color-primary);
+}
+
+/* ===== IMAGENES ===== */
+img {
+ max-width: 60%;
+ height: auto;
+ border-radius: 8px;
+ display: block;
+ margin: 0 auto;
+}
+
+/* ===== LISTAS ===== */
+ul, ol {
+ padding-left: 2rem;
+ margin-bottom: 1rem;
+}
+
+/* ==== VINCULOS ==== */
+
+a:hover {
+ text-decoration: underline;
+ color: var(--color-accent);
+}
+
+a:active {
+ color: var(--color-primary);
+}
+
+/* ==== FORMULARIO ==== */
+input:valid {
+  border: 3px solid var(--color-secondary);
+  background-color: var(--color-primary);
+}
+
+input:invalid:not(:placeholder-shown) {
+  border: 3px solid var(--color-secondary);
+}
+
+input:focus {
+  border: 3px solid var(--color-primary);
+  box-shadow: var(--shadow);
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  border-radius: var(--radius);
+}
+
+/* ==== NAVBAR CON FLEXBOX ==== */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  /* logo izq, links der */
+    align-items: center;             /* centrado vertical */
+    padding: 1rem 2rem;
+    background: var(--color-secondary);
+    color: var(--color-white);
+}
+
+.logo {
+    color: var(--color-primary);
+    font-weight: bold;
+}       
+
+.nav-links {
+    display: flex;       /* los <li> en fila */
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: var(--color-white);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.nav-links a:hover { color: var(--color-accent); }
+
+/* ==== TARJETAS ==== */
+/* 3 cards en desktop, 2 en tablet, 1 en móvil */
+.cards {
+    display: flex;
+    flex-wrap: wrap;     /* permite que bajen */
+    gap: 1.25rem;
+    padding: 2rem;
+}
+
+.card {
+    flex: 1 1 280px;    /* ← LA LÍNEA MÁGICA */
+    background: var(--color-white);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow);
+}
+
+/* ==== SECCION HERO ==== */
+.hero {
+    display: flex;
+    justify-content: center;  /* centrado horizontal */
+    align-items: center;      /* centrado vertical */
+    min-height: 80vh;        /* alto completo de la ventana */
+    background: linear-gradient(135deg, var(--color-secondary), var(--color-accent));
+    color: var(--color-white);
+    text-align: center;
+    flex-direction: column;
+}
+
+.hero-content {
+    max-width: 600px;
+    padding: 2rem;
+}
+
+.hero h1 { 
+   font-size: 3rem;
+   margin-bottom: 1rem; 
+  }
+
+.hero p { 
+  font-size: 1.2rem; 
+  opacity: 0.9; 
+  margin-bottom: 2rem; 
+}
+
+/* ==== BOTON ==== */
+.boton {
+    background: var(--color-bg);
+    color: var(--color-white);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    /* Definir QUÉ propiedad animar y CUÁNTO tarda */
+    transition: all 0.3s ease;
+}
+
+.boton:hover {
+    background: var(--color-secondary);
+    transform: translateY(-2px);          /* sube 2px */
+    box-shadow: var(--shadow);
+}
+
+/* ==== GRID ====*/
+.grid {
+ display: grid;
+ grid-template-columns: 220px 1fr;
+ grid-template-rows: auto 1fr auto;
+ grid-template-areas:
+ "header header"
+ "sidebar main"
+ "footer footer";
+ min-height: 100vh;
+}
+
+.header  { grid-area: header;  background: var(--color-white); color: var(--color-text); text-align:left; }
+.sidebar { grid-area: sidebar; background: var(--color-bg); color: var(--color-white); padding: 20px; }
+.main    { grid-area: main;    padding: 20px; }
+.footer  { grid-area: footer;  background: var(--color-secondary); color: white; text-align: center;}
+
+
+/* ==== GRID AUTO-RESPONSIVE ====*/
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+    padding: 10px;
+}
+
+.galeria .card {
+    background: white;
+    border-radius: var(--radius);
+    padding: 20px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+}
+
+.galeria .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 20px var(--color-primary);
+    }
+
+.icono{
+  font-size: 2rem;
+  text-align: center;
+  margin-top: auto;
+}
+
+/* ==== MEDIA QUERIES ==== */
+/* ═══ BASE: MÓVIL (< 768px) ═══ */
+ @media (max-width: 767px) {
+ .container { padding: 1rem; }
+ .sidebar { display: none; }       /* oculto en móvil */
+ .cards { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+
+ .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    min-height: auto;
+  }
+ }
+
+/* ═══ TABLET (768px+) ═══ */
+@media (min-width: 768px) {
+ .container { padding: 2rem; }
+ .sidebar { display: flex; }   /* visible */
+ .cards { grid-template-columns: repeat(2, 1fr); }  /* 2 columnas */
+
+  .grid {
+    grid-template-columns: 300px 1fr; 
+    grid-template-areas:
+      "header header"
+      "sidebar main"
+      "footer footer";
+    min-height: auto;  
+  }
+}
+
+/* ═══ DESKTOP (1024px+) ═══ */
+@media (min-width: 1024px) {
+ .container { max-width: 1200px; margin: 0 auto; }
+ .cards { grid-template-columns: repeat(3, 1fr); }  /* 3 columnas */
+}
+
+/* ═══ MONITOR GRANDE (1440px+) ═══ */
+@media (min-width: 1440px) {
+    .container { max-width: 1500px; }
+}
